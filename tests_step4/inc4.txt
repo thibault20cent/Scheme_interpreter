@@ -1,0 +1,15 @@
+((lambda (x y) (* x y)) 2 3)
+
+(let ((x 2) (y 3)) (* x y))
+
+(define (mul-by-2 x) (* 2 x))
+
+(define  mul-by-2 (lambda (x) (* x 2)))
+
+(define factorial (lambda (n) (if (= n 0) 1 (* n (factorial (- n 1))))))
+
+(define count ((lambda (total) ((lambda (increment) (set! total (+ total increment)) ) total)) 0))
+
+(define (map proc items) (if (null? items)’()(cons (proc (car items))(map proc (cdr items)))))
+
+(define count ((lambda (total)(lambda (increment)			(begin (set! total (+ total increment)) total)))0))

@@ -1,0 +1,5 @@
+; TEST_RETURN_CODE=PASS
+; TEST_COMMENT=simple -
+
+(- 5 6)
+(- 5 2)

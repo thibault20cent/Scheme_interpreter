@@ -1,0 +1,4 @@
+==> "toto"
+==> a
+==> "symbol"
+==> symbol
